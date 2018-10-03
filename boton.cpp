@@ -18,14 +18,11 @@ Boton::Boton(sf::Vector2f tam, uint16_t id, void(*callback)(uint16_t), const std
 void Boton::init() {
   this->setFillColor(this->colFill); //color de fondo botón
   //cargamos la fuente
-  if( !this->font.loadFromFile("Boton/fonts/DejaVuSerif.ttf")) {
+  if( !this->font.loadFromFile("fonts/DejaVuSerif.ttf")) {
     cout << "no pudo cargarse la fuente." << endl;
   }
   this->textBtn.setFont(this->font);
   this->textBtn.setFillColor(this->textColor);
-//  this->tx_pressed.loadFromFile("Boton/boton.png");
-//  this->setTexturePressed(tx_pressed);
-//  this->setTextureUnpressed(tx_pressed);
 }
 
 // Métodos de clase
